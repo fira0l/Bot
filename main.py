@@ -4,6 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 BOT_TOKEN = os.environ.get("token")
 WEB_APP_URL = "https://telegrambot-48lt.onrender.com"
+const PORT = process.env.PORT || 8000;
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
